@@ -50,6 +50,11 @@ ax3.tick_params(which='minor', length=5, width=1.0, direction='in',top=True,righ
 left, bottom, width, height = [0.32, 0.18, 0.46, 0.3] #
 
 F = 96485.3329
+T_K = 298 # T in Kelvin. Note: you should customise if you change the temperature.
+T = str(T_K - 273) # Temperature in degrees C, for labelling plots.
+
+lower_df = pd.DataFrame()
+upper_df = pd.DataFrame()
 
 # plotting.
 
